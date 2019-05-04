@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Factors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Department</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @factors.each do |factor| %>
+      <tr>
+        <td><%= factor.name %></td>
+        <td><%= factor.location %></td>
+        <td><%= factor.product %></td>
+        <td><%= factor.price %></td>
+        <td><%= factor.quantity %></td>
+        <td><%= factor.department %></td>
+        <td><%= link_to 'Show', factor %></td>
+        <td><%= link_to 'Edit', edit_factor_path(factor) %></td>
+        <td><%= link_to 'Destroy', factor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Factor', new_factor_path %>

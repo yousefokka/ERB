@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ecomerc.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @ecomerc.location %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @ecomerc.department %>
+</p>
+
+<%= link_to 'Edit', edit_ecomerc_path(@ecomerc) %> |
+<%= link_to 'Back', ecomercs_path %>

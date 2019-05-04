@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @factor.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @factor.location %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @factor.product %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @factor.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @factor.quantity %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @factor.department %>
+</p>
+
+<%= link_to 'Edit', edit_factor_path(@factor) %> |
+<%= link_to 'Back', factors_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pname: MyString
+  price: 1
+  quantity: 1
+  customer: one
+  ecomerc: one
+
+two:
+  pname: MyString
+  price: 1
+  quantity: 1
+  customer: two
+  ecomerc: two
